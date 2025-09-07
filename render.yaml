@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: php-telegram-app
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    branch: main
+    envVars:
+      - key: TOKEN2
+        sync: false
+      - key: ID2
+        sync: false
